@@ -1,0 +1,146 @@
+/* Card */
+.signup-card {
+  width: 100%;
+  max-width: 360px;
+  background: #ffffff;
+  border-radius: 14px;
+  padding: 40px 28px 34px;
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.1);
+  margin: 0 auto;
+}
+
+/* Title */
+.signup-title {
+  font-size: 28px;
+  font-weight: 700;
+  color: #111111;
+  text-align: center;
+  margin-bottom: 26px;
+  letter-spacing: -0.2px;
+}
+
+.signup-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.input-group {
+  position: relative;
+  margin-bottom: 16px;
+}
+
+/* Inputs */
+.card-input {
+  width: 100%;
+  padding: 13px 14px;
+  font-size: 14.5px;
+  color: #222222;
+  background-color: #ffffff;
+  border: 1.5px solid #dcdcdc;
+  border-radius: 7px;
+  outline: none;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card-input::placeholder {
+  color: #8a8a8a;
+  font-size: 14px;
+}
+
+.card-input:focus {
+  border-color: #108c70;
+  box-shadow: 0 0 0 3px rgba(16, 140, 112, 0.15);
+}
+
+.password-input {
+  padding-right: 42px;
+}
+
+/* Password Toggle */
+.password-toggle-btn {
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: transparent;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  padding: 4px;
+  outline: none;
+}
+
+.password-toggle-btn:hover svg {
+  stroke: #444444;
+}
+
+/* Submit Button */
+.signup-submit-btn {
+  width: 100%;
+  margin-top: 8px;
+  margin-bottom: 22px;
+  padding: 13px 0;
+  background-color: #108c70;
+  color: #ffffff;
+  border: none;
+  border-radius: 7px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+.signup-submit-btn:hover:not(:disabled) {
+  background-color: #0d7961;
+}
+
+.signup-submit-btn:active:not(:disabled) {
+  transform: scale(0.99);
+}
+
+.signup-submit-btn:disabled {
+  background-color: #79bfaf;
+  cursor: not-allowed;
+}
+
+/* Footer Link */
+.signup-footer {
+  text-align: center;
+  font-size: 13.5px;
+  color: #333333;
+}
+
+.login-link {
+  color: #108c70;
+  text-decoration: none;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.login-link:hover {
+  text-decoration: underline;
+}
+
+/* Status Notifications */
+.alert {
+  padding: 10px 14px;
+  border-radius: 7px;
+  font-size: 13px;
+  margin-bottom: 16px;
+  text-align: center;
+  line-height: 1.4;
+}
+
+.alert-error {
+  background-color: #fef2f2;
+  color: #b91c1c;
+  border: 1px solid #fecaca;
+}
+
+.alert-success {
+  background-color: #f0fdf4;
+  color: #15803d;
+  border: 1px solid #bbf7d0;
+}
